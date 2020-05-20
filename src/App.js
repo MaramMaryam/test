@@ -5,14 +5,13 @@ import Nav from "./components/Nav";
 //import notesReducer from "./context/reducer";
 
 function App() {
-    //const initialState = useContext(NotesContext);
-    //const [state,dispatch] = useReducer(notesReducer,initialState);
+    const initialState = useContext(NotesContext);
+    const [state,dispatch] = useReducer(notesReducer,initialState);
     return (
-        <><Nav/>
-
-{/*            <NotesContext.Provider>
+        <>
+           <NotesContext.Provider>
                 <Nav/>
-            </NotesContext.Provider>*/}
+            </NotesContext.Provider>
 
         </>
     );
